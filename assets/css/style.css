@@ -43,7 +43,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #ffb727;
+  background: #ff2727;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -134,7 +134,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #ffb727;
+  color: #ff2727;
 }
 
 .navbar .dropdown ul {
@@ -550,7 +550,7 @@ section {
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #ffb727;
+  color: #ff2727;
   line-height: 0;
 }
 
@@ -641,7 +641,7 @@ section {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #ffb727;
+  background-color: #ff2727;
 }
 
 /*--------------------------------------------------------------
@@ -732,7 +732,7 @@ section {
 .services .icon i {
   font-size: 36px;
   line-height: 1;
-  color: #ffb727;
+  color: #ff2727;
 }
 
 .services .title {
@@ -753,11 +753,11 @@ section {
 }
 
 .services .icon-box:hover {
-  border-color: #ffb727;
+  border-color: #ff2727;
 }
 
 .services .icon-box:hover .title a {
-  color: #ffb727;
+  color: #ff2727;
 }
 
 /*--------------------------------------------------------------
