@@ -886,8 +886,8 @@ section {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #f3a200;
-  border-color: #ffb727;
+  color: #f30000;
+  border-color: #ff2727;
 }
 
 .portfolio .portfolio-item {
@@ -1142,7 +1142,7 @@ section {
 
 .contact .info-box i.bx {
   font-size: 24px;
-  color: #ffb727;
+  color: #ff2727;
   border-radius: 50%;
   padding: 15px;
   background: #fff6e4;
@@ -1182,8 +1182,8 @@ section {
 
 .contact .social-links a:hover {
   color: #fff;
-  border-color: #ffb727;
-  background: #ffb727;
+  border-color: #ff2727;
+  background: #ff2727;
 }
 
 .contact .php-email-form {
@@ -1249,7 +1249,7 @@ section {
 
 .contact .php-email-form input::focus,
 .contact .php-email-form textarea::focus {
-  background-color: #ffb727;
+  background-color: #ff2727;
 }
 
 .contact .php-email-form input {
@@ -1261,7 +1261,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #ffb727;
+  background: #ff2727;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1270,7 +1270,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #ffc85a;
+  background: #ff5a5a;
 }
 
 @keyframes animate-loading {
