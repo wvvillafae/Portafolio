@@ -1,0 +1,899 @@
+/* Reset básico para evitar diferencias entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+  }
+
+/* General */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+ h2{
+    color: #222;
+    text-align: center;
+    margin-right: 650px;
+}
+h3 {
+    color: #c06d6d;
+    text-align: center;
+
+}
+
+h1 {
+    color: #e6d6d6;
+    text-align: center;
+}
+/* ----- Encabezado general ----- */
+/* === HEADER SOFT BLOOM (Estilo Femenino/Elegante) === */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Fondo translúcido suave: blanco o rosa muy pálido */
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(8px);
+    /* Borde inferior en tono rosa suave o lavanda */
+    border-bottom: 2px solid #b8860b; 
+    z-index: 1000;
+    /* Sombra más delicada y cálida (dorado/rosa) */
+    box-shadow: 0 4px 15px #b8860b; 
+    overflow: hidden;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 30px;
+}
+
+/* Nombre principal con un toque dorado/cobre */
+header h1 {
+    /* Color de texto oscuro para el contraste (ej: borgoña o gris profundo) */
+    color: rgba(33, 14, 53, 0.918); 
+    /* Fuente sofisticada (ej: 'Playfair Display' o 'Cormorant Garamond') */
+    font-family: "Playfair Display", serif; 
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+    text-transform: capitalize; /* Cambiado a inicial mayúscula */
+    /* Sombra elegante y sutil */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, color 0.3s ease;
+    /* Eliminada la animación de pulso neón para un look más tranquilo */
+}
+
+header h1:hover {
+    transform: translateY(-2px); /* Pequeño levantamiento */
+    /* Color de hover: Tono rosa fuerte o dorado/cobre */
+    color: #b8860b; 
+    text-shadow: 1px 1px 10px rgba(184, 134, 11, 0.5);
+}
+
+/* Navegación */
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Separación ligeramente mayor */
+}
+
+header nav ul li a {
+    /* Color de texto oscuro y elegante */
+    color: rgba(33, 14, 53, 0.918); 
+    /* Fuente limpia y legible (ej: 'Montserrat' o 'Lato') */
+    font-family: "Montserrat", sans-serif; 
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+header nav ul li a:hover {
+    /* Color de hover: Tono rosa fuerte */
+    color: rgba(105, 0, 204, 0.7); 
+    /* Línea sutil debajo del enlace en hover */
+    border-bottom: 2px solid rgba(105, 0, 204, 0.7); 
+    text-shadow: none; /* Eliminado el text-shadow neón */
+}
+
+  
+  
+  /* Menú de navegación */
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  nav ul li a {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+/* === HERO SECTION === */
+.hero-section {
+    position: relative;
+    /* Ajustado a 100vh para que ocupe toda la altura de la ventana */
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: #ffffff; 
+}
+
+/* === FONDO DE VIDEO === */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0; /* Posición estable */
+    width: 250%;
+    height: 280%;
+    overflow: hidden;
+    z-index: -1;
+    /* Añadimos un overlay oscuro más suave */
+    background-color: rgba(0, 0, 0, 0.6); 
+}
+
+.video-background iframe {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    object-fit: cover;
+}
+
+/* === CONTENIDO PRINCIPAL === */
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1350px;
+    width: 100%;
+    padding: 12% 10%;
+    z-index: 1;
+}
+
+/* === TEXTO HERO === */
+.hero-text {
+    flex-basis: 50%; /* Espacio para el texto */
+}
+
+.hero-text h2 {
+    margin-top: 0%;
+    margin-left: 10%;
+    font-family: "Orbitron", sans-serif;
+    /* Eliminamos el margen en porcentaje */
+    margin: 0 0 15px 0; 
+    font-size: 3.2rem;
+    /* Nuevo Color: Rosa Oro */
+    color: #ffc0cb; 
+    /* Brillo de neón de Oro Rosa */
+    text-shadow: 0 0 8px #000000, 0 0 15px rgba(255, 192, 203, 0.7); 
+    line-height: 1.2;
+}
+
+.hero-text p {
+    /* Sugerencia: Usamos Montserrat para hacerlo más legible que Orbitron */
+    font-family: "Montserrat", sans-serif;
+    /* Eliminamos el margen en porcentaje */
+    margin: 0 0 40px 0; 
+    font-size: 1.4rem;
+    color: #ffffff; /* Gris claro */
+    line-height: 1.6;
+    font-weight: 300;
+    margin-left: 8%;
+}
+
+/* === IMAGEN HERO === */
+.hero-image {
+    flex-basis: 45%; /* Espacio para la imagen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    margin: -2%; /* Eliminamos los márgenes confusos */
+    width: 420px;
+    margin-left: 20%;
+    height: 430px;
+    border-radius: 300px; /* Bordes rectangulares suaves */
+    object-fit: cover;
+    /* Borde en color Oro Rosa */
+    border: 5px solid #b8860b;
+    /* Sombra de neón suave */
+    box-shadow: 0 0 25px rgb(207, 156, 25); 
+    transition: all 0.4s ease-in-out;
+}
+
+.hero-image img:hover {
+    transform: translateY(-5px); /* Pequeño efecto de elevación */
+}
+
+/* === BOTÓN (BTN) === */
+.btn {
+    /* Usamos Montserrat para el botón, es más moderno y legible */
+    font-family: "Montserrat", sans-serif; 
+    margin-left: 29%; /* Eliminamos el margen de porcentaje */
+    display: inline-block;
+    padding: 14px 30px;
+    /* Fondo con gradiente cálido/metálico */
+    background: linear-gradient(90deg, #b8860b, #ffc0cb); /* Oro a Rosa Suave */
+    color: #000000c7; /* Texto oscuro para contraste en fondo claro */
+    font-weight: 700;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    /* Sombra de neón de Oro Rosa */
+    box-shadow: 0 0 20px #b8860b, 0 0 40px #ffc0cb inset;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* Efecto de brillo deslizante */
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    /* Brillo blanco suave */
+    background: linear-gradient(120deg, transparent, rgba(54, 0, 204, 0.7), transparent); 
+    transform: skewX(-25deg);
+    transition: 0.6s;
+}
+
+.btn:hover::before {
+    left: 130%;
+}
+
+.btn:hover {
+    /* Intensificamos el brillo de Oro Rosa */
+    box-shadow: 0 0 30px #b8860b, 0 0 60px #ffc0cb inset;
+    transform: scale(1.05);
+    /* Invertimos el gradiente */
+    background: linear-gradient(90deg, #f506f5, #b8860b);
+    color: #000000; /* Texto negro al hacer hover para alto contraste */
+}
+  
+ /* ----------------------------------------------------
+   RESPONSIVIDAD (Dispositivos con ancho de 768px o menos)
+   ---------------------------------------------------- */
+@media (max-width: 768px) {
+    
+    /* 1. Contenedor Principal del Hero */
+    .hero-content {
+        /* Tu cambio original: Apila Imagen (primero) y Texto (después) */
+        flex-direction: column-reverse; 
+        text-align: center;
+        
+        /* Ajusta el relleno y elimina el fondo semitransparente si molesta en móvil */
+        padding: 30px 15px; 
+    }
+
+    /* 2. Estilos de la Imagen (Asegura centrado y tamaño) */
+    .hero-image {
+        /* Asegura que no haya márgenes que desalineen la imagen */
+        margin: 0 auto 25px auto; /* Centra la caja y añade espacio debajo */
+        
+        /* Redefine el tamaño para móvil */
+        width: 150px; 
+        height: 150px;
+    }
+    
+    .hero-image img {
+        /* Tu cambio original: Hace la imagen más pequeña, pero el tamaño ya lo define .hero-image */
+        /* Asegura que la imagen llene la caja de 150x150 */
+        width: 100%;
+        height: 100%;
+    }
+
+    /* 3. Estilos del Contenido de Texto */
+    .hero-text {
+        /* Elimina el padding-right que tenía en escritorio */
+        padding-right: 0; 
+        
+        /* Asegura que ocupe todo el ancho disponible */
+        width: 100%; 
+        
+        /* Elimina el flex: 1 si lo tenías y ajusta el margen si es necesario */
+        margin-bottom: 0;
+    }
+    
+    /* Ajusta el tamaño del título si es muy grande */
+    .hero-text h2 {
+        font-size: 2em;
+    }
+    
+    /* Ajusta el padding de toda la sección #hero para que no haya mucho espacio vacío */
+    #hero {
+        padding: 50px 20px;
+        height: auto; /* Permite que el contenido determine la altura en móvil */
+    }
+}
+/* === SOBRE MÍ: VIBRANT GOLD & FUCHSIA STYLING (TARJETAS MÁS PEQUEÑAS) === */
+
+#sobre-mi {
+    padding: 7.1rem 0;
+    background: rgba(33, 14, 53, 0.918); 
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Título principal de la sección */
+#sobre-mi h2 {
+    margin-left: 42%;
+    font-family: "Orbitron", sans-serif;
+    font-size: 1.9rem;
+    white-space: nowrap; /* Fuerza el texto a NO envolverse */
+    margin-bottom: 20px;
+    color: #b8860b; /* Fucsia */
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+    text-transform: uppercase;
+}
+
+#sobre-mi .info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Reducimos el gap para que quepan mejor */
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* === Tarjeta de Información (.info-item) y Contenedor de Imagen (.about-image) === */
+
+#sobre-mi .info-item {
+    text-align: left;
+    background: rgba(25, 25, 25, 0.9); 
+    padding: 0.5rem; /* PADDING REDUCIDO */
+    border-radius: 15px;
+    border: 1px solid rgba(71, 26, 71, 0.3);
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.4); 
+    color: #f0f0f0;
+    margin-top: -3%;
+    
+    /* ANCHO REDUCIDO */
+    width: 300px; 
+    box-sizing: border-box;
+    flex: none; 
+}
+
+#sobre-mi .info-item h3 {
+    font-family: "Orbitron", sans-serif;
+    font-size: 1.3rem; /* Título ligeramente más pequeño */
+    margin-bottom: 1rem;
+    color: #b8860b; 
+    border-bottom: 2px solid #ff00ff; 
+    padding-bottom: 8px;
+    text-transform: uppercase;
+}
+
+/* Listas de Habilidades y Enfoque */
+#sobre-mi .info-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sobre-mi .info-item li {
+    margin-bottom: 12px; /* Espacio de línea reducido */
+    font-size: 1rem; /* Fuente ligeramente más pequeña */
+    position: relative;
+    padding-left: 20px;
+}
+
+/* Icono/viñeta personalizada en Fucsia */
+#sobre-mi .info-item li::before {
+    content: "🔸";
+    color: #ff00ff; 
+    font-size: 0.8em;
+    position: absolute;
+    left: 0;
+    top: 3px; /* Ajustamos la posición vertical por el nuevo font-size */
+}
+
+#sobre-mi .info-item strong {
+    color: #b8860b;
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+/* Contenedor de la Imagen */
+.about-image {
+    /* ANCHO REDUCIDO */
+    width: 400px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    flex: none;
+}
+
+/* Imagen en sí */
+.about-image img {
+    width: 340px; /* IMAGEN REDUCIDA */
+    height: 350px; /* IMAGEN REDUCIDA */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #b8860b;
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.5), 0 0 30px #b8860b;
+    transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
+}
+
+
+/* === MEDIA QUERIES (Para Responsividad) === */
+
+@media (max-width: 1000px) { /* El punto de quiebre puede ser menor ahora que son más pequeñas */
+    /* Permite que los elementos se apilen */
+    #sobre-mi .info-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* Los elementos ocupan todo el ancho del contenedor, pero con un límite */
+    #sobre-mi .info-item,
+    .about-image {
+        width: 100%;
+        max-width: 400px; /* Límite para que no se vean demasiado grandes en tabletas */
+    }
+    
+    /* Mueve la imagen arriba en vista móvil */
+    .about-image {
+        order: -1; 
+        margin-bottom: 30px;
+    }
+}
+/* Proyectos */
+/* === SECCIÓN PROYECTOS === */
+/* === SECCIÓN PROYECTOS: ESTILO GRID (2x3) Y MODAL === */
+#proyectos {
+    padding: 0rem 0;
+    /* Mantenemos el fondo oscuro */
+    background: transparent; 
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Título de la Sección */
+#proyectos .section-title {
+    font-family: "Orbitron", sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    margin-left:39%;
+    color: #b8860b; /* Dorado */
+    text-shadow: 0 0 10px #0c0b0a; 
+    text-transform: uppercase;
+}
+
+/* === GRID DE PROYECTOS (Layout 2x3) === */
+.proyectos-grid {
+    display: grid;
+    /* 3 columnas de igual ancho que se ajustan */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 40px; /* Espacio entre las tarjetas */
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* === TARJETA INDIVIDUAL (Holographic Tile) === */
+.proyecto-card {
+    background: rgba(15, 15, 15, 0.9);
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center; 
+    height: 100%; 
+    
+    /* Borde Fucsia y Sombra de Neón */
+    border: 1px solid rgba(255, 0, 255, 0.2);
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.3);
+    
+    transition: all 0.4s ease;
+    cursor: pointer;
+    margin: 0; 
+    padding-bottom: 25px; /* Espacio para el botón Ver Más */
+}
+
+/* Efecto Hover: Brillo más intenso y pequeña elevación */
+.proyecto-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(255, 0, 255, 0.6), 0 0 25px #b8860b; 
+}
+
+
+/* === IMAGEN Y OVERLAY DE TECNOLOGÍAS === */
+.proyecto-imagen-box {
+    position: relative;
+    overflow: hidden;
+    height: 220px;
+}
+
+.proyecto-imagen-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* Zoom sutil en hover */
+.proyecto-card:hover .proyecto-imagen-box img {
+    transform: scale(1.08);
+}
+
+.tecnologias-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px 15px;
+    background: linear-gradient(90deg, #ff00ff, #a020f0); /* Fucsia a Morado */
+    color: #ffffff;
+    font-family: "Orbitron", sans-serif;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-align: right;
+    opacity: 0.9;
+}
+
+/* === CONTENIDO DE LA TARJETA === */
+.proyecto-contenido {
+    padding: 25px 25px 10px 25px; /* Ajustamos padding inferior */
+    color: #f0f0f0;
+}
+
+.proyecto-contenido h3 {
+    font-family: "Orbitron", sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #b8860b; /* Dorado */
+    text-shadow: 0 0 5px #000000;
+}
+
+.proyecto-contenido p {
+    font-size: 1rem;
+    color: #c0c0c0;
+    margin-bottom: 0;
+}
+
+/* === ESTILOS DEL BOTÓN "VER MÁS" === */
+.btn-ver-mas {
+   width: 50%;
+    padding: 10px;
+    margin-left: -1%;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-family: "Orbitron", sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    
+    /* Degradado de Dorado y Fucsia */
+    background: linear-gradient(90deg,  #b8860b, #ffc0cb); 
+    color: #000000;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
+    
+    /* Sombra de neón combinada */
+    box-shadow: 0 0 15px  #312403;
+    transition: all 0.3s ease;
+}
+.btn-ver-mas {
+    /* --- CÓDIGO A AGREGAR O MODIFICAR --- */
+    margin-top: 20px; /* Puedes ajustar este valor (20px, 30px, etc.) */
+    /* ------------------------------------- */
+
+    /* Tus otros estilos de botón (color, padding, etc.) deben ir aquí */
+    display: inline-block; /* Crucial para que margin-top funcione */
+    padding: 10px 20px;
+    /* ... otros estilos ... */
+}
+/* El efecto de hover queda igual */
+.btn-ver-mas:hover {
+    transform: translateY(-2px) scale(1.01);
+    box-shadow: 0 5px 20px rgba(54, 0, 204, 0.7), 0 0 30px #b8860b;
+}
+
+/* === ESTILOS DEL MODAL (VENTANA EMERGENTE) === */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0); /* Inicialmente escondido */
+    transition: 200ms ease-in-out;
+    border: 2px solid #ff00ff; 
+    border-radius: 10px;
+    z-index: 1000; 
+    background-color: #1a1a1a;
+    width: 90%;
+    max-width: 700px;
+    color: #f0f0f0;
+    box-shadow: 0 0 30px rgba(255, 0, 255, 0.9); 
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1); 
+}
+
+.modal-header {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #b8860b; 
+}
+
+.modal-title {
+    font-family: "Orbitron", sans-serif;
+    font-size: 1.6rem;
+    color: #b8860b; 
+}
+
+.modal-body {
+    padding: 20px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.modal-body strong {
+    color: #ff00ff; 
+}
+
+.close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 2rem;
+    color: #ff00ff; 
+    font-weight: 300;
+    padding: 0 10px;
+}
+
+/* Fondo oscuro (Overlay) */
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .8);
+    pointer-events: none;
+    z-index: 999; 
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+/* === MEDIA QUERIES (Ajuste Responsivo) === */
+
+/* En pantallas medianas (ej: tabletas), pasa a 2 columnas */
+@media (max-width: 992px) {
+    .proyectos-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+/* En pantallas pequeñas (ej: móviles), pasa a 1 columna */
+@media (max-width: 600px) {
+    .proyectos-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
+
+/* === SECCIÓN CONTACTO: NEON TERMINAL FORM === */
+#contacto {
+    background: rgba(33, 14, 53, 0.918); 
+    padding: 5rem 0;
+    /* Fondo oscuro para la consistencia del diseño */
+
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    
+    /* >>> AÑADIR ESTO: Elimina el espacio extra antes del footer <<< */
+    margin-bottom: 0; 
+}
+
+/* Título de la Sección */
+#contacto h2 {
+    font-family: "Orbitron", sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #b8860b; /* Título en Fucsia */
+    text-shadow: 0 0 10px #000000; /* Brillo de neón */
+    text-transform: uppercase;
+    margin-left: 39%;
+}
+
+/* Contenedor principal del formulario (La "Tarjeta Terminal") */
+#formContacto {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    /* Fondo semi-transparente oscuro */
+    background: rgba(15, 15, 15, 0.9); 
+    border-radius: 15px;
+    /* Borde sutil de neón Fucsia */
+    border: 1px solid rgba(54, 0, 204, 0.7);
+    /* Sombra de neón para efecto flotante */
+    box-shadow: 0 0 25px rgba(54, 0, 204, 0.7); 
+}
+
+/* Estilo para cada grupo de campo */
+.form-group {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+/* Etiquetas (Labels) */
+#formContacto label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #b8860b; /* Etiquetas en Dorado */
+}
+
+/* Campos de Input y Textarea */
+#formContacto input[type="text"],
+#formContacto input[type="email"],
+#formContacto textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #555; /* Borde inicial oscuro */
+    border-radius: 8px;
+    background: #000; /* Fondo del campo totalmente negro */
+    color: #f0f0f0; /* Texto del usuario en blanco/gris claro */
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    
+    /* Sombra interior sutil de neón (para campos activos) */
+    box-shadow: inset 0 0 5px rgba(255, 0, 255, 0); 
+}
+
+/* Foco: Borde Fucsia brillante y sombra interior */
+#formContacto input:focus,
+#formContacto textarea:focus {
+    border-color: rgba(54, 0, 204, 0.7); /* Borde Fucsia */
+    box-shadow: 0 0 10px rgba(54, 0, 204, 0.7), inset 0 0 8px rgba(54, 0, 204, 0.7); 
+    outline: none; /* Quita el contorno por defecto del navegador */
+}
+
+/* Textarea: Altura y comportamiento */
+#formContacto textarea {
+    resize: vertical;
+}
+
+/* Botón de Enviar (El punto focal) */
+.btn-2 {
+    width: 50%;
+    padding: 10px;
+    margin-left: -1%;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-family: "Orbitron", sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    
+    /* Degradado de Dorado y Fucsia */
+    background: linear-gradient(90deg,  #b8860b, #ffc0cb); 
+    color: #000000;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
+    
+    /* Sombra de neón combinada */
+    box-shadow: 0 0 15px  #2c2105;
+    transition: all 0.3s ease;
+}
+
+.btn-2:hover {
+    /* Efecto de elevación y brillo más intenso al pasar el ratón */
+    transform: translateY(-2px) scale(1.01);
+    box-shadow: 0 5px 20px rgba(54, 0, 204, 0.7), 0 0 30px  #b8860b;
+}/* Efecto de brillo deslizante */
+
+
+/* Mensaje de éxito/error (opcional) */
+#mensajeEnviado {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #b8860b; /* Dorado para el éxito */
+    text-shadow: 0 0 5px #b8860b;
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 700px) {
+    #formContacto {
+        padding: 25px;
+        max-width: 90%;
+    }
+}
+
+/* Footer */
+footer {
+    background: rgba(255, 255, 255, 0.9);
+    color: rgba(33, 14, 53, 0.918);
+    text-align: center;
+    padding: 0rem 0;
+}
+
+/* === ESTILOS PARA EL MENSAJE DE ENVÍO DE FORMULARIO (#mensajeEnviado) === */
+
+#mensajeEnviado {
+    margin-top: 30px; /* Espacio debajo del formulario */
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    font-family: "Orbitron", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    
+    /* Colores del diseño Neón */
+    color: #b8860b; /* Texto en Dorado */
+    background: rgba(255, 0, 255, 0.1); /* Fondo Fucsia muy sutil */
+    
+    /* Borde Fucsia brillante */
+    border: 1px solid #ff00ff; 
+    border-radius: 8px;
+    
+    /* Sombra de neón para hacerlo destacar */
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.7); 
+    
+    /* Estado inicial: invisible, según tu JS (opacidad: 0) */
+    opacity: 0; 
+    
+    /* Transición suave para la opacidad (usada por tu JS) */
+    transition: opacity 0.5s ease-in-out;
+    
+    /* Asegura que el mensaje use el ancho disponible pero se mantenga centrado */
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
