@@ -5,41 +5,47 @@
     box-sizing: border-box;
   }
   
-  body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-  }
-
-/* General */
-body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
+ /* --- Global Resets & Base Styles --- */
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+body {
+    /* **IMAGEN DE FONDO GLOBAL NEÓN (AJUSTA ESTA RUTA)** */
+    background-image: url('../img/fondoo.jpg'); /* Asegúrate de que esta ruta sea correcta */
+    background-size: cover;          
+    background-attachment: fixed;    /* La imagen se queda quieta al hacer scroll */
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+    font-family: 'Roboto', sans-serif; /* Fuente principal para el cuerpo del texto */
+    color: #E0E0FF; /* Color de texto muy claro/blanco azulado para todo el portafolio */
+    min-height: 100vh;
+    display: flex; /* Para controlar el footer abajo */
+    flex-direction: column; /* Para controlar el footer abajo */
 }
 
- h2{
-    color: #222;
+/* --- Títulos y Header Font --- */
+h1, h2, h3, header h1, .section-title {
+    font-family: 'Orbitron', sans-serif;
+    color: #CFBFFF; /* Un púrpura/blanco más brillante para los títulos */
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.4); /* Efecto neón sutil */
     text-align: center;
-    margin-right: 650px;
-}
-h3 {
-    color: #c06d6d;
-    text-align: center;
-
+    margin-bottom: 30px;
 }
 
-h1 {
-    color: #e6d6d6;
-    text-align: center;
+/* --- Contenedor Principal Flotante (el gran bloque oscuro) --- */
+.main-portfolio-wrapper {
+    background-color: rgba(22, 0, 50, 0.95); /* Color oscuro semi-transparente */
+    margin: 30px auto; /* Centra el contenedor y le da espacio arriba/abajo */
+    padding: 20px 0;
+    max-width: 1200px; /* Ancho máximo para el contenedor central */
+    width: 95%; /* Ocupa el 95% del ancho disponible */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 0 50px rgba(121, 0, 255, 0.6), 0 0 15px rgba(255, 255, 255, 0.2); /* Sombra neón */
+    flex-grow: 1; /* Para que ocupe todo el espacio disponible y empuje el footer abajo */
 }
 /* ----- Encabezado general ----- */
 /* === HEADER SOFT BLOOM (Estilo Femenino/Elegante) === */
@@ -162,12 +168,7 @@ header nav ul li a:hover {
     background-color: rgba(0, 0, 0, 0.6); 
 }
 
-.video-background iframe {
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    object-fit: cover;
-}
+
 
 /* === CONTENIDO PRINCIPAL === */
 .hero-content {
@@ -355,7 +356,7 @@ header nav ul li a:hover {
 
 /* Título principal de la sección */
 #sobre-mi h2 {
-    margin-left: 42%;
+    margin-left: 0%;
     font-family: "Orbitron", sans-serif;
     font-size: 1.9rem;
     white-space: nowrap; /* Fuerza el texto a NO envolverse */
@@ -498,7 +499,7 @@ header nav ul li a:hover {
     font-family: "Orbitron", sans-serif;
     font-size: 2.5rem;
     margin-bottom: 50px;
-    margin-left:39%;
+    margin-left:0%;
     color: #b8860b; /* Dorado */
     text-shadow: 0 0 10px #0c0b0a; 
     text-transform: uppercase;
@@ -748,7 +749,7 @@ header nav ul li a:hover {
     color: #b8860b; /* Título en Fucsia */
     text-shadow: 0 0 10px #000000; /* Brillo de neón */
     text-transform: uppercase;
-    margin-left: 39%;
+    margin-left: 0%;
 }
 
 /* Contenedor principal del formulario (La "Tarjeta Terminal") */
